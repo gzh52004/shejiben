@@ -1,0 +1,7 @@
+@function vw($n) {
+    @return ($n * 100 / 750) + vw;
+  }
+
+.wrap::-webkit-scrollbar{
+  display: none;
+}

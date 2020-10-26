@@ -1,0 +1,73 @@
+@import '../../assets/sass/public/vw.scss';
+
+.footer{
+    width: 100%;
+    height: vw(400);
+    background-color: #f3f3f3;
+    margin-bottom: vw(100);
+    .module{
+        border-top: vw(20) solid #f3f3f3;
+        h2{
+          line-height: vw(80);
+          font-weight: normal;
+          font-size: 18px;
+          padding-left: vw(30);
+        }
+        .look-more{
+          height: vw(80);
+          line-height: vw(80);
+          text-align: center;
+          font-size: 12px;
+        }
+    }
+    .touch{
+        text-align: center;
+        height: vw(170);
+        width: 100%;
+        h2{
+          padding: 0;
+          font-size: 16px;
+        }
+        span{
+          i{
+            font-weight: bolder;
+            font-size: 24px;
+            padding-right: vw(20);
+          }
+          color: red;
+        }
+    }
+    .foot-list{
+      height: vw(100);
+        ul{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            font-size: 14px;
+            li{
+                margin: vw(30) 0;
+                position: relative;
+                padding: 0 vw(20);
+                &:not(:last-child)::after{
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: vw(30);
+                    background-color: #999999;
+                    position: absolute;
+                    top: vw(6);
+                    right: 0;
+                }
+            }
+        }
+        p{
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+        }
+    }
+    .hg100{
+      width: 100%;
+      height: vw(100);
+    }
+}

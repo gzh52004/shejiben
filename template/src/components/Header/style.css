@@ -1,0 +1,9 @@
+.wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  height: 11.73333vw;
+  width: 100%;
+  background-color: #dd4f50;
+}
