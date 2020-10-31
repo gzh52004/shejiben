@@ -1,0 +1,43 @@
+@import '../../assets/sass/public/vw.scss'; 
+
+.Reg{
+    width: 100%;
+    padding: vw(50) vw(62);
+    .small-msg{
+        line-height: vw(80);
+        color: #c1c1c1;
+        font-size: 14px;
+        padding-bottom: vw(30);
+    }
+    .form{
+        margin-top: vw(40);
+        input{
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: vw(24);
+            border-bottom: 2px solid #e3e3e3;
+            color: #aaaaaa;
+            font-size: 16px;
+        }
+        h3{
+            color: red;
+            font-size: 12px;
+        }
+    }
+    .Reg-btn{
+        width: 100%;
+        height: vw(98);
+        outline: none;
+        border: none;
+        background-color: #d5bb8b;
+        color: white;
+        font-size: 18px;
+        margin: vw(30) 0;
+        margin-top: vw(60);
+    }
+    .yzm{
+        font-size: 14px;
+        color: #333333;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../assets/sass/public/vw.scss';
+
+.case-detail-pic{
+    text-align: center;
+    width: 100%;
+    .case-cover{
+        width: 100%;
+    }
+    .title{
+        font-size: 16px;
+        line-height: vw(90);
+    }
+    .parameter{
+        height: vw(20);
+        line-height: vw(20);
+        font-size: 12px;
+        color: #999999;
+        i{
+            padding: 0 vw(6) 0 vw(4);
+        }
+    }
+    .description{
+        border: 1px solid #cccccc;
+        border-radius: vw(10);
+        padding: vw(30) vw(20);
+        margin:  0 vw(16);
+        margin-top: vw(60);
+        margin-bottom: vw(40);
+        .column{
+            height: vw(20);
+            line-height: vw(20);
+            color: #999999;
+            font-size: 12px;
+            padding: 0 vw(20);
+            span{
+                font-size: 16px;
+                padding-right: vw(10);
+                color: #666666;
+            }
+        }
+        p{
+            color: #666666;
+            margin-top: vw(-40);
+            line-height: vw(50);
+            text-align: left;
+        }
+    }
+    .pic{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        p{
+            padding: vw(10);
+            line-height: 2;
+            color: #666666;
+            text-align: left;
+        }
+    }
+}

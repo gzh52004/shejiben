@@ -7,7 +7,7 @@ import store from "@/store";
 import {HashRouter} from 'react-router-dom'
 import { Provider } from "react-redux";
 
-console.log(store);
+// console.log(store);
 ReactDOM.render(
     <Provider store={store}>
 <HashRouter>

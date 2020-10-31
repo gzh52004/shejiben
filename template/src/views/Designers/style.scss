@@ -1,0 +1,102 @@
+@import '../../assets/sass/public/vw.scss';
+
+.pagination-container{
+    .term{
+        width: 100vw;
+        height: vw(80);
+        align-items: center;
+        text-align: center;
+        display: flex;
+        position: relative;
+        .box{
+            flex: 1;
+            height: vw(80);
+            line-height: vw(80);
+            border: 1px solid #cccccc;
+        }
+        .lag-box{
+            width: 100vw;
+            position: absolute;
+            top: vw(80);
+            background-color: white;
+            .city-box{
+
+            }
+            .style-box{
+                width: vw(210);
+                height: vw(60);
+                line-height: vw(60);
+                border-radius: vw(30);
+                margin: vw(30) vw(20);
+                border: 1px solid #cccccc;
+                float: left;
+            }
+            .sort-box{
+                height: vw(80);
+                width: 100vw;
+                text-align: left;
+                padding-left: vw(30);
+                line-height: vw(80);
+                border-bottom: 1px solid #cccccc;
+            }
+        }
+    }
+    .content{
+        .info-box{
+            width: 100vw;
+            height: vw(400);
+            // background-color: yellowgreen;
+            padding: vw(30) 0;
+            border-bottom: 1px solid #ebe7e7;
+            .sjsname{
+                height: vw(100);
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: vw(20);
+                .left{
+                    display: flex;
+                    img{
+                        width: vw(80);
+                        height: vw(80);
+                        border-radius: 50%;
+                        margin: 0 vw(30);
+                    }
+                    div{
+                        p{
+                            font-size: 16px;
+                            margin-bottom: vw(10);
+                        }
+                        span{
+                            font-size: 12px;
+                            color: #666666;
+                            padding-right: vw(10);
+                        }
+                    }
+                }
+                .right{
+                    display: flex;
+                    margin-right: vw(30);
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-around;
+                    .red{
+                        font-size: 16px;
+                        color: red;
+                    }
+                }
+            }
+            .p_src{
+                display: flex;
+                width: 100vw;
+                height: vw(260);
+                overflow: hidden;
+                align-items: center;
+                img{
+                    width: vw(238);
+                    height: vw(220);
+                    margin-left: vw(10);
+                }
+            }
+        }
+    }
+}

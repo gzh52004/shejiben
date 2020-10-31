@@ -1,0 +1,140 @@
+@import '../../assets/sass/public/vw.scss';
+
+.sjs-detail-pic{
+    width: 100%;
+    .sjs-info{
+        text-align: center;
+        width: 100%;
+        background-color: white;
+        .head{
+            font-size: 12px;
+            color: #999999;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 vw(120);
+            padding-top: vw(60);
+            img{
+                width: vw(180);
+                height: vw(180);
+                border-radius: 50%;
+            }
+            .yuyue-total{
+                display: flex;
+                flex-direction: column;
+                span{
+                    font-size: 16px;
+                    color: #666666;
+                }
+            }
+            .order-total{
+                display: flex;
+                flex-direction: column;
+                span{
+                    font-size: 16px;
+                    color: #666666;
+                }
+            }
+        }
+        .name{
+            line-height: 2;
+            font-size: 18px;
+            color: #333333;
+            i{
+                font-size: 22px;
+                padding-left: vw(10);
+            }
+        }
+        .city{
+            line-height: 2;
+            font-size: 12px;
+            color: #666666;
+        }
+        .price{
+            line-height: 2;
+            font-size: 16px;
+            color: red;
+            padding-bottom: vw(40);
+        }
+    }
+    .tab{
+        .pic{
+            text-align: center;
+            width: 100%;
+            .case-cover{
+                width: 100%;
+            }
+            .title{
+                font-size: 16px;
+                line-height: 2;
+                padding-top: vw(10);
+            }
+            .parameter{
+                line-height: 4;
+                font-size: 12px;
+                color: #999999;
+                i{
+                    padding: 0 vw(6) 0 vw(4);
+                }
+            }
+        }
+        .about{
+            min-height: vw(600);
+            padding-bottom: vw(20);
+            span{
+                padding: vw(20);
+                display: block;
+                border-bottom: 1px #f1f1f1 solid;
+                position: relative;
+                .column{
+                    position: absolute;
+                    padding-right: vw(20);
+                    color: #333333;
+                    line-height: 2;
+                }
+                .info{
+                    margin-left: vw(140);
+                    line-height: 2;
+                    display: block;
+                }
+            }
+            .no-border{
+                border: none;
+            }
+        }
+        .assess{
+            .comment-info{
+                padding: vw(40) vw(20);
+                border-top: 1px #f1f1f1 solid;
+                display: flex;
+                i{
+                    font-size: 36px;
+                    color: yellowgreen;
+                }
+                .info{
+                    width: 100%;
+                    padding-left: vw(20);
+                    padding-right: vw(30);
+                    .name{
+                        float: left;
+                        color: #333333;
+                    }
+                    .time{
+                        font-size: 12px;
+                        float: right;
+                        color: #999999;
+                    }
+                    .good{
+                        margin-top: vw(40);
+                        line-height: 3;
+                        display: block;
+                        color: #dd4f50;
+                    }
+                    .msg{
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+}

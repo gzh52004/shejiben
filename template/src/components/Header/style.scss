@@ -12,6 +12,10 @@
         height: vw(90);
         line-height: vw(88);
         padding-left: vw(30);
+        display: flex;
+        i{
+            padding-right: vw(20);
+        }
     }
     .hed-list{
         height: vw(90);

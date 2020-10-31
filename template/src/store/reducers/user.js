@@ -19,7 +19,7 @@ var initState = {
 // action就会收到我们执行dispatch传过来的对象  ，然后根据这个对象 ‘匹配’ 相应的操作 ，这些操作中至少包含返回一个 state
 
 var userReducer = function (state = initState, action) {
-  console.log("任意action被触发", action);
+  // console.log("任意action被触发", action);
   switch (action.type) {
     case "login":
       console.log("匹配到login之后的action=", action);

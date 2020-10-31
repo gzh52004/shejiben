@@ -15,26 +15,45 @@ import { takeLatest, takeEvery, call, put, apply } from "redux-saga/effects";
 //2  由于我们要这个saga中间件帮我们发ajax,所以先要引入request
 import request from "@/utils/request";
 function* initial() {
-  console.log("hello saga!,saga配置文件执行了");
+  // console.log("hello saga!,saga配置文件执行了");
   yield takeLatest("login_async", login);
+  // yield takeLatest("initSjsdata_async", initdata);
+  yield takeLatest("initdata_async", initdata);
+}
+
+
+//初始化设计师数据
+function * initdata(query){
+  const { page,
+    pagesize,
+    sortquery,
+    findquery,  } = query;
+  console.log("查询设计师列表的条件",query);
+  var { data } = yield call(request.post, "/sjs/findpage", {page,
+    pagesize,
+    sortquery,
+    findquery,});
+  console.log("getdata发送请求之后回来的data=", data,data.msg);
+  var action = { type: "sjsinitdata", sjslist:data.msg };
+  yield put(action);
 }
 
 // 6开始写具体的触发条件之后执行的函数
 function* login(sagaAction) {
-  console.log(
-    "sagaAction外边触发saga事件时传进来的参数和触发事件组成的对象{type:'login_async',values:{...} }",
-    sagaAction
-  );
-  console.log(
-    "sagaAction外边触发saga事件时传进来的参数和触发事件组成的对象{type:'login_async',values:{...} }",
-    sagaAction.values
-  );
+  // console.log(
+  //   "sagaAction外边触发saga事件时传进来的参数和触发事件组成的对象{type:'login_async',values:{...} }",
+  //   sagaAction
+  // );
+  // console.log(
+  //   "sagaAction外边触发saga事件时传进来的参数和触发事件组成的对象{type:'login_async',values:{...} }",
+  //   sagaAction.values
+  // );
   //7  利用call改变指向并且发Ajax请求 注意这个call时saga帮我们封装之后的,函数作为第一个参数传入
 
   var { data } = yield call(request.get, "/users/login", {
     params: sagaAction.values,
   });
-  console.log("这是saga帮我们发送请求之后回来的data=", data);
+  console.log("这是saga帮我们发送请求之后回来的data=", sagaAction);
   //8   注意这里,我没写底下的内容他就不执行上边这个打印
 
   // 等待异步结果返回后，调用同步action：reducer action
@@ -43,7 +62,7 @@ function* login(sagaAction) {
 }
 
 function* logout(sagaAction) {
-  console.log("登出的sagaAction", sagaAction);
+  // console.log("登出的sagaAction", sagaAction);
   var action = { type: "logout", user: {} };
   yield put(action);
 }

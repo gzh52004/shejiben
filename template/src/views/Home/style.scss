@@ -69,16 +69,17 @@ ul{
     .hot{
       width: 100%;
       margin-top: vw(26);
+      padding-bottom: vw(40);
       ul{
         width: 100%;
         height: vw(360);
         overflow: hidden;
         li{
           float: left;
+          padding: vw(6) vw(12);
           img{
             width: vw(160);
             height: vw(160);
-            padding: vw(6) vw(13);
           }
         }
       }

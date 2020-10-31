@@ -1,0 +1,27 @@
+@import '../../assets/sass/public/vw.scss';
+
+.works{
+    width: 100vw;
+    .box-list{
+        width: 100vw;
+        height: vw(80);
+        display: flex;
+        .box{
+            flex: 1;
+            height: vw(80);
+            line-height: vw(80);
+            text-align: center;
+            border: 1px solid #cccccc;
+        }
+    }
+    
+    .photo{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        img{
+            padding: vw(10) 0;
+            width: 48%;
+        }
+    }
+}
