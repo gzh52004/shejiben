@@ -13,6 +13,7 @@ import Notfound from "./views/Notfound";
 import Sjslist from './views/Sjslist';
 import Caselist from './views/Caselist';
 import Ztlist from './views/Ztlist';
+import Jiexi from './views/Jiexi';
 import Gallery from './views/Gallery';
 import Set from './views/Mine/Set';
 import Reg from "./views/Reg";
@@ -72,6 +73,7 @@ class App extends React.Component {
             }
               <Route path="/sjslist/:id" component={Sjslist}></Route>
               <Route path="/caselist/:id" component={Caselist}></Route>
+              <Route path="/jiexi/:id" component={Jiexi}></Route>
               <Route path="/ztlist" component={Ztlist}></Route>
               <Route path="/gallery" component={Gallery}></Route>
               <Route path="/set" component={Set}></Route>
