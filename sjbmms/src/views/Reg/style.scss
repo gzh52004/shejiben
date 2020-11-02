@@ -1,0 +1,28 @@
+.regtitle {
+  text-align: center;
+  color: #001529;
+  font-size: 40px;
+  margin-top: 40px;
+}
+#basic {
+  width: 800px;
+  margin: 0 auto;
+  .ant-form-item {
+    margin-right: 140px;
+    margin-bottom: 30px;
+    .ant-form-item-required {
+      font-size: 22px;
+    }
+    .ant-form-item-label {
+      margin-top: 6px;
+    }
+  }
+}
+
+.regbtn {
+  .ant-form-item-control-input-content {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
