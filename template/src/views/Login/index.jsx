@@ -87,7 +87,9 @@ class Login extends React.Component {
         },
       });
       Toast.success("登录成功！", 1);
-      this.props.history.push('./mine');
+      setTimeout(() => {
+        this.props.history.push('./mine');
+      }, 1000);
     }else{
       Toast.fail("账号或者密码错误！", 1);
       return;

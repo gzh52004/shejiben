@@ -1,0 +1,46 @@
+@import "../../../assets/sass/public/vw.scss";
+
+.work{
+    .box{
+        position: absolute;
+        top: vw(24);
+        left: vw(230);
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+    }
+    .photo{
+        width: 100%;
+        
+        text-align: center;
+        div{
+            height: vw(600);
+        }
+        img{
+            width: 100%;
+        }
+        .title{
+            line-height: vw(50);
+            font-size: 12px;
+            color: #999999;
+        }
+        .jj{
+            width: vw(400);
+            line-height: vw(60);
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .parameter{
+            height: vw(20);
+            line-height: vw(40);
+            display: block;
+            font-size: 12px;
+            color: #999999;
+            i{
+                padding: 0 vw(6) 0 vw(4);
+            }
+        }
+    }
+}

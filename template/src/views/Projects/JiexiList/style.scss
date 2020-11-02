@@ -1,0 +1,13 @@
+@import "../../../assets/sass/public/vw.scss";
+.jiexilist{
+    .listItem{
+        width: 100%;
+        padding: vw(20);
+        img{
+            width: 100%;
+        }
+    }
+    margin-bottom: vw(100);
+
+}
+

@@ -4,15 +4,15 @@ import App from "./App"; //根组件
 import './App'
 import * as serviceWorker from "./serviceWorker"; //缓存资源
 import store from "@/store";
-import {HashRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import { Provider } from "react-redux";
 
 // console.log(store);
 ReactDOM.render(
     <Provider store={store}>
-<HashRouter>
+<BrowserRouter>
 <App />
-</HashRouter>
+</BrowserRouter>
 </Provider>
 , document.getElementById("root"));
 

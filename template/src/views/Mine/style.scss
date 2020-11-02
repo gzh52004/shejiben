@@ -17,13 +17,19 @@
             height: vw(180);
             border-radius: 50%;
             background-color: white;
+            img{
+                width: vw(180);
+                height: vw(180);
+                border-radius: 50%;
+            }
         }
         h3{
             color: white;
-            font-size: 16px;
-            line-height: vw(100);
+            font-size: 20px;
+            line-height: 2;
         }
         button{
+            margin-top: vw(30);
             width: vw(260);
             height: vw(78);
             border: none;

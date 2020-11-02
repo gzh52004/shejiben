@@ -1,0 +1,47 @@
+@import "../../../assets/sass/public/vw.scss";
+.worksdt{
+    margin-bottom: vw(100);
+    .banner{
+        width: 100%;
+    }
+    .p_title{
+        text-align: center;
+        font-size: vw(36);
+        font-weight: 500;
+        margin-top: vw(20);
+        margin-bottom: vw(20);
+    }
+    .maininfo{
+        text-align: center;
+        font-size: vw(26);
+        color:#ccc;
+        span{
+            margin:0 vw(6)
+        }
+    }
+    .intro{
+        padding: vw(20);
+        h3{
+            font-size: vw(36);
+            font-weight: 500;
+            margin-bottom: vw(20);
+        }
+        p,h3 {
+            line-height: vw(44);
+            font-size: vw(28);
+            color: "#ccc";
+            padding: 0 vw(20);
+          }
+
+    }
+    .worksDetails{
+        padding: vw(20);
+        img{
+            width: 100%;
+        }
+        p{
+            line-height: vw(44);
+            font-size: vw(28);
+        }
+    }
+}

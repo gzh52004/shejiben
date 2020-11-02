@@ -1,6 +1,6 @@
 //对axios进行二次封装
 import axios from "axios";
-var baseUrl = "http://localhost:3000";
+var baseUrl = "http://47.113.124.47:60005";
 const request = axios.create({
   baseURL: baseUrl,
 });

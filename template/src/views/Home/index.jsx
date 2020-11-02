@@ -124,7 +124,7 @@ class Home extends React.Component {
                 </div>
                 {/* 两个静态图 */}
                 <div className="more-cont">
-                    <img src={m01} alt="" />
+                    <img src={m01} alt="" onClick={() => this.props.history.push('/projects/jiexilist')} />
                     <img src={m02} alt="" />
                 </div>
                 {/* 跳转到caselist */}
@@ -140,11 +140,17 @@ class Home extends React.Component {
                 <div className="recommend module">
                     <h2>案例推荐</h2>
                     <div className="img-list">
-                        <img src={c01} alt="" />
-                        <img src={c01} alt="" />
-                        <img src={c01} alt="" />
+                        <img src='http://47.113.124.47:60005/img/20200813010415-71b95520.jpeg!660x374.jpg' alt="" 
+                         onClick={() => this.props.history.push('/projects/worksdetails/6574789/case-4007788-1')} />
+                        <img src='http://47.113.124.47:60005/img/20200813011231-98979905.jpeg!660x374.jpg'  alt=""    onClick={() => this.props.history.push('/projects/worksdetails/6574789/case-4007789-1')} />
+                        <img src='http://47.113.124.47:60005/img/20201019194420-08ef31ac.jpeg!660x374.jpg' alt="" onClick={() => this.props.history.push('/projects/worksdetails/10042783/case-4012090-1')} />
                     </div>
-                    <p className="look-more">查看更多案例&nbsp;&gt;</p>
+                    <p className="look-more" onClick={() => this.props.history.push({
+                            pathname: '/projects/work',
+                            state: {
+                                lock: false,
+                            }
+                        })}   >查看更多案例&nbsp;&gt;</p>
                 </div>
                 {/* 点更多跳转到ztlist */}
                 <div className="designer module">

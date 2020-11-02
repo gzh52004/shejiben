@@ -137,4 +137,18 @@
             }
         }
     }
+    .btn{
+        position: fixed;
+        z-index: 2;
+        bottom: vw(200);
+        left: 50%;
+        margin-left: vw(-130);
+        border: none;
+        background-color: #dd4f50;
+        color: white;
+        width: vw(260);
+        height: vw(80);
+        border-radius: vw(40);
+        font-size: 16px;
+    }
 }

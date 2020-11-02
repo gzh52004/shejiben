@@ -1,0 +1,36 @@
+{
+    
+	    "Print to console": {
+	    
+	        "prefix": "react-class",
+	        "body": [
+	            "import React from 'react'",
+	        
+	            "class $0 extends React.Component {",
+	            
+	            "constructor(props) {",
+	            
+	                "super(props)",
+	                
+	                "this.state = {",
+	                
+	                "}",
+	                
+	            "}",
+	        
+	            "render() {",
+	        
+	                "return (",
+	            
+	                "<div></div>",
+	                ")",
+	            
+	            "}",
+	        
+	            "}",
+	
+	            "export default $0 "
+	        ],
+	        "description": "Log output to console"
+	    }
+	}

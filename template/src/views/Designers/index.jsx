@@ -11,9 +11,9 @@ import '../../assets/font/iconfont.css'
 import Footer from '../../components/Footer'
 import Search from '../../components/Search'
 // import Children from './Children'
-import City from './City'
-import Space from './Space'
-import Sort from './Sort'
+// import City from './City'
+// import Space from './Space'
+// import Sort from './Sort'
 // console.log('Children',Children)
 
 const mapStateToProps = (state) => {
@@ -246,7 +246,7 @@ class Desginer extends React.Component {
                         }
                         {
                             stylelock ?
-                                styleArr.map((item) => <div className="style-box" key={item} onClick={this.query.bind(this, { order: -1 })}><span>{item}</span></div>)
+                                styleArr.map((item) => <div className="style-box" key={item} onClick={this.query.bind(this, { order: 1 })}><span>{item}</span></div>)
                                 :
                                 null
                         }

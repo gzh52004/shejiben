@@ -32,6 +32,15 @@ class Caselist extends React.Component {
             dataList: arr
         })
     }
+    btn = () => {
+        const {sjsid:id} = this.state.dataList[0];
+        console.log(id);
+        this.props.history.push({
+            pathname: '/order/' + id,
+            search: '?id=' + id,
+            state: ''
+        })
+    }
     render() {
         const { dataList } = this.state;
         console.log('这是即将渲染页面的列表', dataList);
@@ -120,6 +129,7 @@ class Caselist extends React.Component {
                         
                     </div>)
                 }
+                <button className="btn" onClick={this.btn}>在线预约</button>
                 <Footer></Footer>
             </div>
         )
