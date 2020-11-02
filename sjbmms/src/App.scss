@@ -1,0 +1,169 @@
+@charset "utf-8";
+$co: rgb(0, 21, 41);
+.body {
+  color: $co;
+  font-size: 28px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: black;
+}
+
+nav {
+  width: 100%;
+  background-color: darkblue;
+  overflow: hidden;
+  .nav_left {
+    float: left;
+    width: 80%;
+    // background: darkgoldenrod;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    li {
+      width: 33.3%;
+      font-size: 28px;
+      margin: 0 20px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .nav_right {
+    width: 20%;
+    float: right;
+    height: 60px;
+    // background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      width: 80px;
+      height: 40px;
+      background: #58bc58;
+      border: none;
+    }
+  }
+}
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+section,
+article,
+aside,
+header,
+footer,
+nav,
+figure,
+figcaption,
+main,
+hgroup,
+mark,
+time,
+dialog,
+embed {
+  margin: 0;
+  padding: 0;
+}
+body {
+  // font-size: 16px;
+  font-family: "微软雅黑";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+a,
+u {
+  text-decoration: none;
+}
+b,
+strong {
+  font-weight: normal;
+}
+img,
+fieldset {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+textarea {
+  /* 禁止用户拖拽大小 */
+  resize: none;
+}
+
+/* 封装自己的类名 */
+
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+.border_none {
+  border: none !important;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.clear_fix:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+}
+.clear_fix {
+  zoom: 1;
+}
+/* 多行文本 */
+.text-webkit {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+}
